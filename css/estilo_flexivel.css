@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@font-face 
+{
+        font-family:'FontLogo';
+        src: url();
+}
+body {
+    background-color: black;
+}
+h1 {
+    color: rgb(241, 149, 10);
+}
+p{
+    color: rgb(161, 187, 14);
+}
+div#interface {
+    border: #000000 solid 0px;
+    background-image: url(../img/sporte.jpg);
+    background-repeat: no-repeat;
+    background-position: 200pt;
+    margin: -20px auto 0px auto;
+    margin-left: -7px;
+    padding: 10px 10px 40px 10px;
+
+}
+a {
+    color: #606060;
+    text-decoration: none;
+}
+div#tabela1{
+
+}
+nav#menu {
+    display: block;
+
+}
+nav#menu ul {
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+top: 90px;
+left: 300px;
+font-family:'Aldrich';
+font-language-override: inherit;
+}
+nav#menu li {
+   
+    display: inline-block;
+    background-color:none;
+    padding: 10px;
+    margin-top: 5px;
+    transition: background-color 1s;
+    font-size: 15px;
+}
+nav#menu li:hover {
+background-color: none;
+}
+nav#menu h1 {
+   display: none;
+}
+nav#menu a {
+    color: #af4905;
+    text-decoration: none;
+    }
+nav#menu a:hover {
+    color: aliceblue;
+}
+div#caixa1{
+    border: rgba(238, 234, 12) solid 3px;
+    border-radius: 10px;
+    width: 500px;
+}
+footer#rodape {
+    clear: both;
+    border: 0px solid #606060; 
+}
+footer#rodape p {
+    text-align: center;
+    text-indent: 30px;
+    font-size: 10pt;
+}

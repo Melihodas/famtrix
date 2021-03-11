@@ -1,0 +1,260 @@
+@charset "UTF-8";
+@font-face {
+        font-family:'FontLogo';
+        src: url('../_fonts/Lobster_1.3.otf');
+}
+body {
+        background-color: whitesmoke;
+        background-repeat: no-repeat ;
+        background-size: cover;
+ font-family: Agency FB, sans-serif;
+}
+div#interface {
+        width: 100%;
+        border: #000000 solid 0px;
+        background-color: rgb(207, 208, 208);
+        margin: -20px 0px 0px -13px;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, .5);
+        padding: 10px 10px 10px 10px;
+}
+div#filmes{
+        border: 5px solid #14467c;
+        width: 150px;
+        height: 200px; 
+        border-radius: 10px;
+}
+a {
+        color: #606060;
+        text-decoration: none;
+        
+}
+a:hover {
+text-decoration: underline;
+}
+p { text-align: justify; 
+        text-indent: 200px;
+    font-family: Aldrich;
+    text-decoration-color: #1839ca;
+    font-size: 15pt;
+    }
+h1 {
+       font-family: Arial, Helvetica, sans-serif;
+        color:rgb(245, 24, 24);
+text-shadow:2px 2px 2px rgb(19, 54, 70);
+}
+header#cabecalho img#icone {
+position: absolute;
+left: 900px;
+top: 10px;
+}
+hgrup#famtrix {
+        position: absolute;
+        left: 10px;
+        top: -20px;
+        }
+header#cabecalho {
+        border-bottom: 0px #606060 solid;
+        height: 72px;
+        background: url("../_imagens/fundo-digital.jpg") no-repeat;
+}
+header#cabecalho h1 {
+      font-family:'Orbitron';
+      font-size: 30pt;
+      color: #e6dddd;
+      text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+      padding: 0px;
+      margin-bottom: 0px;
+}
+header#cabecalho h2 {
+        font-family: Agency FB, sans-serif;
+        color: #036ab9;
+        font-size: 15pt; 
+        padding: 0px;
+        margin-top: 0px;
+}
+/* Formatação de imagens com legendas */
+figure.foto-legenda {
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+ width: 400;
+ height: 100;
+ }
+ figure.foto-legenda figcaption {
+         opacity: 0;
+         position: absolute;
+         top: 0px;
+         background-color: rgba(0, 0, 0, 0, 4);
+         color: rgb(250, 245, 245);
+         width: 100%;
+         height: 100%;
+         padding: 10px;
+         box-sizing: border-box;
+         transition: opacity 1s;
+ }
+ figure.foto-legenda:hover figcaption {
+         opacity: 1;
+ }
+
+ /* formatação do Menu */
+ nav#menu {
+         display: block;
+
+ }
+ nav#menu ul {
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+top: -20px;
+left: 300px;
+font-family:'Aldrich';
+font-language-override: inherit;
+ }
+ nav#menu li {
+        
+         display: inline-block;
+         background-color:none;
+         padding: 10px;
+         margin-top: 30px;
+         transition: background-color 1s;
+         font-size: 15px;
+ }
+ nav#menu li:hover {
+background-color: none;
+ }
+ nav#menu h1 {
+        display: none;
+ }
+ nav#menu a {
+         color: #e45b0d;
+         text-decoration: none;
+         }
+ nav#menu a:hover {
+         color: aliceblue;
+ }         
+ section#corpo {
+         display: block;
+         width: 550px;
+         float: left;
+         border-right: 0px solid #17df59;
+         padding-right: 8px;
+ }
+
+ header#cabecalho_de_artigo h1 {
+font-family: 'fontelogo' , sans-serif;
+font-size: 20pt;
+color: #606060;
+margin-bottom: 0px;
+margin-top: 0px;
+ }
+ .direita {
+         text-align: right;
+ }
+
+ header#cabecalho_de_artigo h2 {
+font-size: 10pt;
+color: #273f4b9c;
+background-color: rgb(55, 110, 161);
+margin: 0px;
+font-family: Aldrich;
+ }
+
+ header#cabecalho_de_artigo h3 {
+font-size: 12px;
+color: #606060;
+
+ }
+ table#tabela {
+         border: 0px solid #606060;   
+         border-spacing: 0px;
+         margin-left: auto;
+         margin-right: auto;     
+ }
+ table#tabela td {
+         border: 0px solid #606060;
+         padding: 10px ;
+         text-align: center;
+         vertical-align: top;
+ }
+ table#tabela td.ce {
+       text-align: right;  
+       color: aliceblue;
+       background-color: #606060;
+       font-weight: bold;
+ }
+ table#tabela td.cd {        
+      text-align:left;
+      background-color: #cecece;
+ }
+ table#tabela caption {
+         color: rgba(8, 54, 56, 0.904);
+         font-size: 13pt;
+         font-weight: bolder;
+}
+div#filmecentro {
+        background-image: url(../img/fundocentro.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 230%;
+        margin-left: -5px;
+}
+table#tabela caption span {
+        display: block;
+        float: right;
+        color: #000000;
+        font-size: 8pt;
+        margin-top: 10px;
+}
+ aside#lateral {
+         display: block;
+         width:401px ;
+         float: right;
+         padding: 10px;
+         background-color: #cecece;
+         margin: 10px;
+         box-shadow: 2px 2px 2px rgba(0, 0, 0,.5);
+         margin-top: 0px;
+         
+ }
+ aside#lateral h1 {
+font-family: 'FonteLogo' , sans-serif;
+font-size: 20pt;
+color: #606060;
+ }
+ aside#lateral h2 {
+background-color: #606060;
+font-size: 20pt;
+color: #000000;
+padding: 13px;
+ }
+ footer#rodape {
+         clear: both;
+         border: 0px solid #606060; 
+ }
+ footer#rodape p {
+         text-align: center;
+         text-indent: 30px;
+         font-size: 10pt;
+ }
+ div#downloads {
+         border:0px solid #606060;
+         }
+div#aranha {
+        position: absolute;
+        left: 200px;
+        top: 210px;
+}
+div#slider {
+        
+        margin: -10px;
+        position: static;
+        width: 230.7%;
+        
+        
+}
+div#slider img {
+        height: 310px;
+        
+}

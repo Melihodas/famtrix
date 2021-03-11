@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TECH FER</title>
+    <link rel="stylesheet" href="../css/estilojava.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+
+</head>
+
+<bory>
+        <div id="interface">
+        <header id="cabecalho">
+            <hgrup>
+                <img src="../img/js.webp" />
+            </hgrup>
+            <!-- Menu do site  -->
+            <!--<img id="icone" src="_imagens/android.jpg" width="200" height="100" />-->
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                    <li><a href="../links/paginicial.html">Home</a></li>
+                    <li><a href="../links/java script.html">Java Script</a></li>
+                    <li><a href="../links/flexivelfit.html">Flexiel Fit</a></li>
+                    <li><a href="../links/multimidia.html">Multimidia</a></li>
+                    <!--<li><a href="/meu site/links/contatos.html">Fale conosco</a></li>-->
+                </ul>
+            </nav>
+        </div>
+        </header>
+
+            <!--  Noticias principais -->
+            <section id="corpo-full">
+                    <article id="artigo">
+                            <header id="cabecalho_de_artigo">
+                                <hgrup>
+                                    <h3>tecnologia &nbsp; Especificações</h3>
+                                    <h1>Aqui você encontra tudo sobre Tech</h1>
+                                    <h2>por Fer Santos</h2>
+                                    <h3 class="direita">Atualizado em 13/08/2019</h3>
+                                </hgrup>
+                            </header>
+                            <div id="caixa1">
+                            <p>Click em qualquer aréa marcada para visualizar.</p>
+                        </div>
+                        
+                            </article>
+            </section>
+            <div id="meupais">
+            <h1>Geografia</h1>
+            <p>Qual é o seu País:</p> <input type="text" name="bra" id="bra">
+            <input type="button" value="verificar" onclick="calcular()">
+            
+            <!--Comecando script-->
+            <script>
+                function calcular() { 
+            var Brasil = document.getElementById('bra')
+            var estrangeiro = document.getElementById('')
+            var pais = Text(Brasil.value)
+                    res.innerHTML = <p>seu pai é <strong>${pais}</strong></p> 
+            
+        }            
+            </script>
+            </div>
+            <canvas id="screen" width="500" height="500"></canvas>
+            <script>
+            const screen = document.getElementById('screen')
+            const context = screen.getContext('2d')
+            
+            const color = 'red'
+            const positionX = 0
+            const positionY = 0
+            const width = 250
+            const height = 250
+            
+            context.fillstyle = color
+            context.fillRect(positionX, positionY, width, height)
+            
+            </script>
+        
+    
+            <footer id="rodape">
+                    <p>Copyright &copy; 2019 - by Fernando Braz <br/><a href='' target="blank">Facebook</a> I <a href=''
+                            target="blank">Twitter</a></p>
+                </footer>
+            
+        </bory>        
+            
+</html>
