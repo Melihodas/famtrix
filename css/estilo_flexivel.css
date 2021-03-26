@@ -4,72 +4,142 @@
         font-family:'FontLogo';
         src: url();
 }
+/* Global ================================ */
+:root {
+    --white: rgb(229, 235, 238);
+    --blue-white: rgba(62, 134, 243, 0.747);
+    --black: rgb(0, 0, 0);
+}
+
+html {
+    /* A cada 1rem é considerado 10px*/
+    font-size: 62.5%; 
+    /*android and iphone*/
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: black;
+  
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+.container {
+    width: min(90vw, 950px);
+    margin: auto;
+    border: 0px solid #606060;
+} 
+p {
+    font-size: 1.6rem;
+    color:var(--white);
 }
 h1 {
-    color: rgb(241, 149, 10);
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-family: 'Roboto',sans-serif;
+    color: var(--white);
 }
-p{
-    color: rgb(161, 187, 14);
-}
-div#interface {
-    border: #000000 solid 0px;
-    background-image: url(../img/sporte.jpg);
-    background-repeat: no-repeat;
-    background-position: 200pt;
-    margin: -20px auto 0px auto;
-    margin-left: -7px;
-    padding: 10px 10px 40px 10px;
-
-}
+h2 {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--blue-white);
+}   
+/* Links e Buttons =============================*/
 a {
-    color: #606060;
     text-decoration: none;
+    color: var(--blue-white);
 }
-div#tabela1{
-
-}
-nav#menu {
-    display: block;
-
-}
-nav#menu ul {
-list-style: none;
-text-transform: uppercase;
-position: absolute;
-top: 90px;
-left: 300px;
-font-family:'Aldrich';
-font-language-override: inherit;
-}
-nav#menu li {
-   
-    display: inline-block;
-    background-color:none;
-    padding: 10px;
-    margin-top: 5px;
-    transition: background-color 1s;
-    font-size: 15px;
-}
-nav#menu li:hover {
-background-color: none;
-}
-nav#menu h1 {
-   display: none;
-}
-nav#menu a {
-    color: #af4905;
-    text-decoration: none;
+button {
+    width: 100%;
+    height: 50px;
+    
+    border: none;
+    color: var(--white);
+    background: var(--blue-white);
+    border-radius: 0.25rem;
+    cursor: pointer;
     }
-nav#menu a:hover {
-    color: aliceblue;
+    button:hover {
+        background: rgb(248, 127, 46);
+    }
+    .button.cancel {
+        background: var(--black);
+        color:var(--white);
+        border: 2px var(--black) solid;
+        border-radius: 0.25rem;
+        font-size: 1.3rem;
+        height: 50px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        opacity: 0.6;
+    
+    }
+    .button.cancel:hover {
+        opacity: 1;
+    }
+
+/* Header ======================================= */
+header {
+    background-color: rgba(21, 22, 22, 0.979);
+    padding: 2rem 0 2rem;
+    
+    
 }
-div#caixa1{
-    border: rgba(238, 234, 12) solid 3px;
-    border-radius: 10px;
-    width: 500px;
+header h2{
+    font-size: 2.6rem;
+    line-height: 0.6rem;
+    font-family: 'Roboto',sans-serif;
+    text-align: left;
+    margin-left: 5vw;
+    margin-top: 2.5rem;
 }
+div.instagram {
+    text-align: right;
+    border: 0px solid #606060;
+
+}
+
+/* Formulário =======================================*/
+
+#form {
+    max-width: 500px;
+
+}
+#form h2 {
+    margin-top: 0;
+}
+#form form input {
+border: none;
+border-radius: 0.2rem;
+
+padding: 0.8rem;
+
+width: 100%;
+}
+.input-group {
+    margin-top: 0.8rem;
+}
+.iput-group small {
+    opacity: 0.04;
+}
+
+
 footer#rodape {
     clear: both;
     border: 0px solid #606060; 
@@ -78,4 +148,26 @@ footer#rodape p {
     text-align: center;
     text-indent: 30px;
     font-size: 10pt;
+}
+
+/* Responsive ================================================*/
+@media (min-width:800px) {
+    html {
+font-size: 87.5;
+}
+selection.avisos {
+    display: flex;
+
+}
+section.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 2rem;
+}
+
+
+div#instagram {
+    width: 15%;
+
+}
 }
